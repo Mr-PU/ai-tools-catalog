@@ -1,0 +1,49 @@
+{
+  "tools": [
+    {
+      "id": "1",
+      "name": "ChatGPT",
+      "description": "Advanced language model for natural conversations and content generation",
+      "category": "Language Models",
+      "url": "https://chat.openai.com",
+      "pricing": "Free/Premium",
+      "tags": ["AI Chat", "Content Generation", "Writing"]
+    },
+    {
+      "id": "2",
+      "name": "Midjourney",
+      "description": "AI art generation tool for creating stunning visual content",
+      "category": "Image Generation",
+      "url": "https://www.midjourney.com",
+      "pricing": "Subscription",
+      "tags": ["AI Art", "Image Generation", "Design"]
+    },
+    {
+      "id": "3",
+      "name": "Copy.ai",
+      "description": "AI-powered copywriting tool for marketing content",
+      "category": "Writing",
+      "url": "https://www.copy.ai",
+      "pricing": "Free/Premium",
+      "tags": ["Copywriting", "Marketing", "Content"]
+    },
+    {
+      "id": "4",
+      "name": "Jasper",
+      "description": "AI content platform for creating blog posts, social media, and more",
+      "category": "Writing",
+      "url": "https://www.jasper.ai",
+      "pricing": "Premium",
+      "tags": ["Content Creation", "Writing", "Marketing"]
+    },
+    {
+      "id": "5",
+      "name": "Stable Diffusion",
+      "description": "Open-source image generation model for creating artwork",
+      "category": "Image Generation",
+      "url": "https://stability.ai",
+      "pricing": "Free/Self-hosted",
+      "tags": ["AI Art", "Image Generation", "Open Source"]
+    }
+  ]
+} 

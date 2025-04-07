@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 100% 25%;
+    --foreground: 0 0% 100%;
+    --card: 180 100% 30%;
+    --card-foreground: 0 0% 100%;
+    --popover: 180 100% 30%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 180 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 180 100% 20%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 180 100% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 180 100% 30%;
+    --input: 180 100% 30%;
+    --ring: 180 100% 25%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 180 100% 15%;
+    --foreground: 0 0% 100%;
+    --card: 180 100% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 180 100% 20%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 180 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 180 100% 15%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 180 100% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 180 100% 25%;
+    --input: 180 100% 25%;
+    --ring: 180 100% 25%;
+  }
+
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-background text-foreground min-h-screen;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-xl transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-border;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 rounded-xl border border-input bg-card text-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+} 
