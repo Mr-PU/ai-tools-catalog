@@ -1,10 +1,9 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { ExternalLink, Star } from 'lucide-react'
-import { Tool } from '../data/tools'
+import { motion } from 'framer-motion';
+import { ExternalLink, Star } from 'lucide-react';
+import { Tool } from '../types'; // Fixed import path
 
 interface ToolCardProps {
-  tool: Tool
+  tool: Tool;
 }
 
 export default function ToolCard({ tool }: ToolCardProps) {
@@ -32,7 +31,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
         </p>
 
         <div className="flex flex-wrap gap-2 mb-4">
-          {tool.tags?.map(tag => (
+          {tool.tags?.map((tag) => (
             <span
               key={tag}
               className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
@@ -59,5 +58,5 @@ export default function ToolCard({ tool }: ToolCardProps) {
         </div>
       </div>
     </motion.div>
-  )
-} 
+  );
+}

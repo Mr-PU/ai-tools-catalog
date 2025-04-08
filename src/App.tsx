@@ -6,7 +6,6 @@ import CategoryFilter from './components/CategoryFilter'
 import ToolCard from './components/ToolCard'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import { motion } from 'framer-motion'
 
 const ITEMS_PER_PAGE = 21
 
